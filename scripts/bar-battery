@@ -1,0 +1,2 @@
+#!/bin/sh
+echo "[   $(acpi | sed "s/,//g" | awk '{print $4}' | tr -d "\n") $(bar-batterystatus) ]"
